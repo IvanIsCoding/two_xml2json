@@ -119,7 +119,7 @@ dependencies = [
 
 [[package]]
 name = "two_xml2json"
-version = "0.0.1-alpha"
+version = "0.0.1"
 dependencies = [
  "quick-xml",
  "serde_json",
