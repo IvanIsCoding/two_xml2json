@@ -1,0 +1,25 @@
+[package]
+name = "two_xml2json"
+description = "Convert XML documents to serde_json values"
+version = "0.0.1-alpha"
+edition = "2024"
+rust-version = "1.94"
+authors = ["Ivan Carvalho <ivancarvalho@gatech.edu>"]
+repository = "https://github.com/IvanIsCoding/two_xml2json"
+license = "MIT OR Apache-2.0"
+keywords = ["xml", "json", "serde", "converter"]
+categories = ["encoding", "parser-implementations"]
+
+include = [
+    "src/**",
+    "tests/**",
+    "Cargo.toml",
+    "Cargo.lock",
+    "README.md",
+    "LICENSE-MIT",
+    "LICENSE-APACHE",
+]
+
+[dependencies]
+quick-xml = "=0.41.0"
+serde_json = { version = "1", features = ["preserve_order"] }
